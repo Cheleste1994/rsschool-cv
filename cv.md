@@ -4,4 +4,4 @@
 
 ![Avatar](/images/avatar.jpg)  
 
-[Link Github](https://hexlet.io)  
+[Link Github](https://github.com/Cheleste1994)  
