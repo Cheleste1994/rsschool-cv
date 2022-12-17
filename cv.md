@@ -4,6 +4,6 @@
 
 ### Minsk City
 
-![Avatar](/images/avatar.jpg)  
+![Avatar](assets/img/avatar.jpg)  
 
 [Link Github](https://github.com/Cheleste1994)  
