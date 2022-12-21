@@ -1,19 +1,118 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
- 
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
- 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
- 
-  <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/img/rs_school_js.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+
+    <title>cv</title>
 </head>
- 
-<body>
-  <script src="js/scripts.js"></script>
+<body class="body">
+    <header class="header"> 
+        <div class="header-container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>          
+                    <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+                </ul>
+            </nav>
+        
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-container">
+            <section class="section-profile" id="profile">
+                <div class="conteiner-profile-avatar" ><img src="assets/img/avatar.jpg" alt="avatar" class="avatar"></div>
+                <div class="conteiner-profile-title"><h1 class="section-title">Andrei Shamayeu</h1>
+                <h3 class="section-subtitle">JavaScript course</h3>
+                </div>
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="section-title">Contacts</h2>
+                <ul class="section-list">
+                  <li class="section-item contacts-item">
+                    Minsk, Belarus
+                  </li>
+                  <li class="section-item contacts-item">
+                    Email: <a href="mailto:wolverines@tut.by" title="email">wolverines@tut.by</a>
+                  </li>
+                  <li class="section-item contacts-item">
+                    Github: <a href="https://github.com/Cheleste1994" title="github">Cheleste1994</a>
+                  </li>
+                </ul>
+            </section>
+            <section class="section" id="summary">
+                    <h2 class="section-title">Summary</h2>
+                    <p>
+                        I'm doing a tutorial project and would like to be involved in creating a real JavaScript project when I'm done.
+                    </p>
+            
+            </section>
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul class="section-list">
+                  <li class="section-item">
+                    Web-development:<span> HTML5</span>
+                  </li>
+                  <li class="section-item">
+                    CSS3
+                  </li>
+                  <li class="section-item">
+                    JavaScript
+                  </li>
+                  
+                </ul>
+              </section>
+              <section class="section" id="code">
+                            <h2 class="section-title">Code</h2>
+                    <pre class="pre"><code>function factorial(n) {
+                    if(n &lt; 0) return null;
+                    if (n &lt;= 1) return 1;
+                    return n * factorial(n-1);
+                    }</code></pre>
+              </section>
+              <section class="section" id="projects">
+                <h2 class="section-title">Projects</h2>
+                <ul class="section-list">
+                  <li class="section-item">
+                    <a href="https://github.com/Cheleste1994/rsschool-cv/">RS School</a>
+                  </li>          
+                 
+                </ul>
+              </section>
+            <section class="section section-education" id="education">
+                <h2 class="section-title">Education</h2>
+                <p>Minsk State College of Electronics</p>
+              </section>
+              <section class="section section-english" id="english">
+                <h2 class="section-title">English</h2>
+                <p>A1 - Beginner</p>
+              </section>
+              
+        </div>
+        
+    </main>    
+    <footer class="footer">
+        <div class="container">
+            <div>  © 2022
+            <a href="https://github.com/Cheleste1994"> My Github</a>
+            </div>
+            <div>
+            <a href="https://rs.school/js/" class="rss"> </a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
