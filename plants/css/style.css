@@ -126,6 +126,9 @@ margin: 42px auto;
     margin-right: 0;
 }
 
+.header-item:hover, .header-item:focus {
+  opacity: 0.50;
+}
 
 .header-link {
 font-family: 'Inika';
@@ -152,9 +155,6 @@ color: #E06733;
 
 /* welcome styles start */
 
-.main {
-  width: auto 1440px;
-}
 
 .welcome {
 
@@ -267,17 +267,7 @@ margin-bottom: 48px;
 color: #636060;
 }
 
-.welcome__more {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  width: 158px;
-  height: 44px;
-  
-  
-  border: 2px solid #E06733;
-  border-radius: 10px;
-}
+
 .welcome__more__link {
   font-family: 'Inter';
   font-style: normal;
@@ -285,13 +275,24 @@ color: #636060;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
-  margin: 0 auto;
-  text-decoration: none;
+  width: 158px;
+  height: 44px;
+  
+  
+  border: 2px solid #E06733;
+  border-radius: 10px;
   /* or 125% */
   
  
   
 }
+.welcome__more__link:hover {
+	background-color: white;
+}
+.welcome__more__link:active {
+	background-color: white !important;
+}
+
 
 
 /* welcome styles end */
@@ -370,15 +371,21 @@ color: #636060
   /* service styles start */
 
   .service {
-    height: 666px;
+    height: 1300px;
+    background: #EDF2EC;
+    
   }  
-  
-    .service__project {
+
+
+
+.service__project {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       width: 1007px;
       height: 94px;
+      padding-top: 40px;
+      margin-bottom: 45px;
           }
 
 .project {
@@ -416,4 +423,336 @@ text-decoration: none;
 
 
 color: #E06733;
+}
+
+.services__btns:hover, .services__btns:focus {
+  opacity: 0.50;
+}
+.service__items {
+  padding-top: 90px;
+}
+
+.service__item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 55px 116px;
+  
+}
+
+.service__item-pic {
+width: 330px;
+height: 450px;
+}
+
+.service__item-thumb {
+  object-fit: cover;
+}
+
+.service__itemm__card {
+  display: flex;
+  flex-wrap: wrap;
+  
+
+  
+  border: 1px solid #E3E1D5;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.service__item-title {
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 20px;
+margin: 10px auto;
+
+color: #E06733;
+}
+
+.service__item-desc {
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+margin: 0 auto 36px auto;
+
+color: #717171;
+}
+
+/* service styles end */
+
+/* prices styles start */
+
+.wrapper__prices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 115px;
+ 
+}
+
+
+.prices__title {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+margin-bottom: 60px;
+}
+
+.prices__selection__scroll {
+
+
+width: 332px;
+height: 282px;
+
+border: 1px solid #E3E1D5;
+border-radius: 20px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 20px;
+}
+
+.prices__selection-checkbox {
+  margin-left: 41px;
+  margin-top: 32px;
+  
+}
+
+.prices__checkbox {
+  display: block;
+  user-select: none;
+  width: 250px;
+  height: 50px;
+  
+  align-items: center;
+  text-align: center;
+  
+  background: #EDF2EC;
+border-radius: 20px;
+}
+
+.prices__our {
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-end;
+width: 452px;
+height: 191px;
+margin-bottom: 38px;
+}
+
+.prices__our-help {
+  width: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 39px;
+  
+}
+
+.prices__more__link {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  width: 158px;
+  height: 44px;
+  
+  
+  border: 2px solid #E06733;
+  border-radius: 10px;
+  /* or 125% */
+  
+ 
+  
+}
+.prices__more__link:hover {
+	background-color: white;
+}
+.prices__more__link:active {
+	background-color: white !important;
+}
+
+
+
+.prices-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  /* or 125% */
+  
+  text-align: right;
+  
+  color: #000000;
+}
+
+.prices__title-text {
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 50px;
+/* or 125% */
+
+text-align: right;
+
+color: #499A18;
+}
+
+  
+  .prices__btns__link {
+    font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  margin: 0 auto;
+  text-decoration: none;
+  
+  
+  color: #E06733;
+  }
+  
+  .prices__btns:hover, .prices__btns:focus {
+    opacity: 0.50;
+  }
+
+/* prices styles end */
+
+/* contacts styles start */
+
+.contacts {
+
+  
+  background: #EDF2EC;
+}
+
+
+
+.section__contacts {
+  width: 1220px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.section__contacts__img {
+  width: 33%;
+}
+
+.contacts__img {
+background: url(../assets/img/contact_woman.png);
+width: 400px;
+height: 496.99px;
+
+margin-left: 50px;
+}
+
+
+
+
+.contacts__us {
+width: 33%;
+}
+
+.contacts__us-title {
+  font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 52px;
+width: 195px;
+margin: 50px auto;
+color: #499A18;
+}
+
+.contacts__select {
+  width: 33%;
+  margin: 148px auto;
+}
+
+.contacts__city {
+width: 100%;
+height: 50px;
+background: #D6E7D2;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 0px;
+}
+
+.contacts__city {
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 40px;
+
+letter-spacing: 0.05em;
+
+color: #717171;
+}
+
+/* contacts styles end */
+
+/* footer styles start */
+
+.footer__section {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  height: 130px;
+  margin-top: 40px;
+}
+
+.footer__year {
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 50px;
+/* identical to box height, or 250% */
+margin-right: 30px;
+
+color: #000000;
+}
+
+.footer__year-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer__year-link:hover, .footer__year-link:focus {
+  opacity: 0.50;
+}
+
+.footer__section-git {
+  display: flex;
+  flex-wrap: wrap;
+  width: 33%;
+  
+}
+
+.footer__section-rsschool {
+  width: 33%;
+  margin: 0 auto;
+}
+
+.footer-link {
+  margin-left: 30px;
+  width: 32px;
+  height: 32px;
+}
+
+.footer__sectio-ul {
+  display: flex;
+  flex-wrap: wrap;
 }
